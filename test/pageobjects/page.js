@@ -1,5 +1,5 @@
 function Page () {
-    this.title = 'Welcome';
+
     this.env = process.env.ENV;
 
     switch (this.env) {
@@ -14,6 +14,10 @@ function Page () {
 
 Page.prototype.open = function (path) {
     browser.url(path);
+};
+
+Page.prototype.title = function () {
+    return browser.getTitle();
 };
 
 module.exports = new Page();
