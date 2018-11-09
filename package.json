@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "test": "wdio wdio.conf.js",
-        "posttest": "node_modules/.bin/marge webdriverio-template-result.json --autoOpen --timestamp"
+        "posttest": "node_modules/.bin/marge webdriverio-template-result.json --timestamp"
     },
     "author": "nirmal baral",
     "license": "MIT",
