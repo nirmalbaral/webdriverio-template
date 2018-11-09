@@ -148,7 +148,14 @@ exports.config = {
     // The only one supported by default is 'dot'
     // see also: http://webdriver.io/guide/reporters/dot.html
     reporters: ['mochawesome'],
-    
+    reporterOptions: {
+        outputDir: './', //json file will be written to this directory
+        mochawesome_filename: 'webdriverio-template-result.json' //will default to wdiomochawesome.json if no name is provided
+        },
+    mochawesomeOpts: {
+        includeScreenshots:true,
+        screenshotUseRelativePath:false
+    },
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
