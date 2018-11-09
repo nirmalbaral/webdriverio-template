@@ -11,3 +11,8 @@ jobs:
       - run:
           name: test
           command: npm test
+      - store_test_results:
+          path: ./
+
+      - store_artifacts:
+          path: ./webdriverio-template-result.json         
