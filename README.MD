@@ -1,0 +1,1 @@
+[![CircleCI](https://circleci.com/gh/nirmalbaral/webdriverio-template.svg?style=svg)](https://circleci.com/gh/nirmalbaral/webdriverio-template)
