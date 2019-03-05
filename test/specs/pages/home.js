@@ -8,7 +8,7 @@ describe('webdriver.io menu links', function () {
         homePage.open();
         homePage.homepageLink.click();
 
-        expect(homePage.pageTitle()).to.contain('WebdriverIO · Next-gen WebDriver test framework for Node.js');
+        expect(homePage.pageTitle()).to.contain('API Docs · WebdriverIO');
     });
 
 //     it('should show documentation page when developer guide link is clicked', function () {
