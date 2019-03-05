@@ -11,7 +11,7 @@
     "license": "MIT",
     "dependencies": {
         "chai": "^4.1.2",
-        "lodash": "^4.17.10",
+        "lodash": ">=4.17.11",
         "supertest": "^3.1.0",
         "webdriverio": "^4.13.0",
         "mochawesome": "^3.0.2",
