@@ -53,7 +53,10 @@ exports.config = {
         // 5 instances get started at a time.
         maxInstances: 5,
         //
-        browserName: 'firefox'
+        browserName: 'chrome',
+        chromeOptions: {
+            args: ['--headless', '--disable-gpu', '--window-size=1280,800']
+        }
     // }
     // , {
     //     // maxInstances can get overwritten per capability. So if you have an in-house Selenium
