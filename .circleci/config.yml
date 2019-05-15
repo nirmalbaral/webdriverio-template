@@ -15,4 +15,4 @@ jobs:
           path: mochawesome-report/
 
       - store_artifacts:
-          path: mochawesome-report/webdriverio-template-result.json        
+          path: mochawesome-report/webdriverio-template-result.html
