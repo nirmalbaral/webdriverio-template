@@ -18,7 +18,7 @@ jobs:
           path: mochawesome-report/webdriverio-template-result.html
 
 workflows:
-  version: 2
+  version: 2.1
   nightly:
     triggers:
       - schedule:
