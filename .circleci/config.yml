@@ -17,3 +17,8 @@ jobs:
       - store_artifacts:
           path: mochawesome-report/webdriverio-template-result.html
 
+workflows:
+  version: 2.1
+  nightly:
+    jobs:
+      - build  
