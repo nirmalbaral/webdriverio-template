@@ -1,4 +1,13 @@
-version: 2
+workflows:
+version: 2.1
+nightly:
+    triggers:
+      - schedule:
+          cron: "*/5 * * * *"
+          filters:
+            branches:
+              only:
+                - master
 jobs:
   build:
     docker:
@@ -13,6 +22,6 @@ jobs:
           command: npm run test
       - store_test_results:
           path: mochawesome-report/
-
       - store_artifacts:
           path: mochawesome-report/webdriverio-template-result.html
+  
