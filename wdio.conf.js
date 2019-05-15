@@ -150,7 +150,7 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: http://webdriver.io/guide/reporters/dot.html
-    reporters: ['mochawesome'],
+    reporters: ['mochawesome', 'spec'],
     reporterOptions: {
         outputDir: './', //json file will be written to this directory
         mochawesome_filename: 'webdriverio-template-result.json' //will default to wdiomochawesome.json if no name is provided
