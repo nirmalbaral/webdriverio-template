@@ -12,7 +12,4 @@ jobs:
           name: test
           command: npm run test
       - store_test_results:
-          path: ./
-
-      - store_artifacts:
-          path: ./webdriverio-template-result.json         
+          path: ./mochawesome-report        
