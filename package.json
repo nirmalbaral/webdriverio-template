@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "test": "wdio wdio.conf.js",
-        "posttest": "node_modules/.bin/marge webdriverio-template-result.json --timestamp"
+        "posttest": "rm -fr mochawesome-report && node_modules/.bin/marge webdriverio-template-result.json"
     },
     "author": "nirmal baral",
     "license": "MIT",
