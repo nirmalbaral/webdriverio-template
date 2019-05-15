@@ -4,8 +4,8 @@
     "description": "selenium based webdriverio test suite for browser UI testing",
     "main": "index.js",
     "scripts": {
-        "test": "wdio wdio.conf.js",
-        "posttest": "rm -fr mochawesome-report && node_modules/.bin/marge webdriverio-template-result.json"
+        "test": "rm -fr mochawesome-report && wdio wdio.conf.js",
+        "posttest": "node_modules/.bin/marge webdriverio-template-result.json"
     },
     "author": "nirmal baral",
     "license": "MIT",
