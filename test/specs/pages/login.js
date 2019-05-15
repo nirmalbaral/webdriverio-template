@@ -7,7 +7,7 @@ describe('Login Page', function () {
         loginPage.login(loginPage.uname, loginPage.pwd);
         loginPage.subHeader.waitForVisible();
         
-        expect(loginPage.subHeader.getText()).to.be.equal('Welcome to the Secure haha Area. When you are done click logout below.');
+        expect(loginPage.subHeader.getText()).to.be.equal('Welcome to the Secure Area. When you are done click logout below.');
     });
 
     it('should logout when logout link is clicked', function () {
