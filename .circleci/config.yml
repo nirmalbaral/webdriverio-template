@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: klamping/wdio-ff
+      - image: circleci/node:8-browsers
     steps:
       - checkout
       - run:
@@ -10,7 +10,7 @@ jobs:
           command: npm install
       - run:
           name: test
-          command: npm test
+          command: npm run test
       - store_test_results:
           path: ./
 
