@@ -4,7 +4,7 @@ var homePage = require('../../pageobjects/home.page');
 
 describe('webdriver.io menu links', function () {
 
-    it('should show home page when home link is clicked', function () {
+    it('should show home page when home link is lol clicked', function () {
         homePage.open();
         homePage.homepageLink.click();
 
