@@ -2,31 +2,31 @@ version: 2.0
 jobs:
   build:
     docker:
-      - image: circleci/node:8-browsers
+    - image: circleci/node:8-browsers
     steps:
-      - checkout
-      - run:
-          name: install-npm
-          command: npm install
-      - run:
-          name: test
-          command: npm run test
-      - store_test_results:
-          path: mochawesome-report/
-      - store_artifacts:
-          path: mochawesome-report/webdriverio-template-result.html
+    - checkout
+    - run:
+        name: install-npm
+        command: npm install
+    - run:
+        name: test
+        command: npm run test
+    - store_test_results:
+        path: mochawesome-report/
+    - store_artifacts:
+        path: mochawesome-report/webdriverio-template-result.html
 workflows:
   version: 2
-  commit-workflow:
-    jobs:
-      - build
-  schedule-workflow:
+  nightly:
     triggers:
-      - schedule:
-          cron: "30 13 * * *"
-          filters:
-            branches:
-              only:
-                - master
+    - schedule:
+        cron: 6 15 * * *
+        filters:
+          branches:
+            only:
+            - master
     jobs:
-      - build
+    - build
+  build_and_test:
+    jobs:
+    - build
