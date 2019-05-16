@@ -17,10 +17,10 @@ jobs:
           path: mochawesome-report/webdriverio-template-result.html
 workflows:
   version: 2
-  build:
+  nightly:
     triggers:
       - schedule:
-          cron: "30 12 * * *"
+          cron: "45 12 * * *"
           filters:
             branches:
               only:
