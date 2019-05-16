@@ -1,5 +1,4 @@
 version: 2.1
-
 jobs:
   build:
     docker:
@@ -16,9 +15,8 @@ jobs:
           path: mochawesome-report/
       - store_artifacts:
           path: mochawesome-report/webdriverio-template-result.html
-
 workflows:
   version: 2
-  build:
+  build_and_test:
     jobs:
-      - build  
+      - build
