@@ -153,10 +153,7 @@ exports.config = {
     reporters: ['junit', 'spec'],
     reporterOptions: {
         junit: {
-            outputDir: './',
-            outputFileFormat: function(opts) { // optional
-                return 'test-results.xml';
-            }
+            outputDir: './'
         }
     },
     //
