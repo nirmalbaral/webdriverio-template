@@ -12,7 +12,7 @@ jobs:
         name: test
         command: npm run test
     - store_test_results:
-        path: ./test-results.xml
+        path: ./
     - store_artifacts:
         path: ./test-results.xml
     - run:
