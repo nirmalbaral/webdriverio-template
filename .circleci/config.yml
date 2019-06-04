@@ -18,10 +18,6 @@ jobs:
     - run:
       name: upload to 
       command: curl -X POST
-         --header "Content-Type:text/xml"
-         --header "x-api-key:${CALLIOPE_API_KEY}"
-         --form "file[]=@test-results.xml"
-         "https://app.calliope.pro/api/v2/profile/542/report/import/junit?os=node"
 workflows:
   version: 2
   nightly:
