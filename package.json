@@ -14,7 +14,7 @@
         "supertest": "^3.1.0",
         "webdriverio": "^4.13.0",
         "mochawesome": "^3.0.2",
-        "mochawesome-report-generator": "^2.3.2"
+        "mochawesome-report-generator": "^3.0.0"
     },
     "devDependencies": {
         "@wdio/spec-reporter": "^5.8.0",
