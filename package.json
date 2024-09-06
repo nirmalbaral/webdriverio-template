@@ -9,12 +9,12 @@
     "author": "nirmal baral",
     "license": "MIT",
     "dependencies": {
-        "chai": "^4.1.2",
+        "chai": "^4.3.10",
         "lodash": ">=4.17.13",
         "supertest": "^3.1.0",
         "webdriverio": "^4.13.0",
-        "mochawesome": "^3.0.2",
-        "mochawesome-report-generator": "^2.3.2"
+        "mochawesome": "^7.0.0",
+        "mochawesome-report-generator": "^6.0.0"
     },
     "devDependencies": {
         "@wdio/spec-reporter": "^5.8.0",
